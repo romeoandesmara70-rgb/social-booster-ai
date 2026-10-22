@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1264d8">
+<title>Social Booster AI Facebook — Versi 2</title>
+<style>
+:root{--blue:#1877f2;--navy:#13233d;--muted:#64748b;--line:#e1e9f3;--bg:#f3f7fc;--green:#13795b}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--navy)}
+header{background:linear-gradient(125deg,#0c4ca3,#1877f2);color:white;padding:22px 16px 34px}.wrap{max-width:900px;margin:auto}
+.brand{display:flex;align-items:center;gap:11px}.logo{width:43px;height:43px;border-radius:13px;background:#fff;color:var(--blue);font-size:24px;font-weight:900;display:grid;place-items:center}.brand h1{font-size:19px;margin:0}.brand p{font-size:12px;color:#dceaff;margin:3px 0 0}
+.hero{margin-top:23px}.hero h2{font-size:clamp(27px,5vw,38px);line-height:1.12;margin:0 0 10px}.hero p{color:#e5efff;line-height:1.55;margin:0}
+main{padding:0 13px 35px;margin-top:-15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:18px;margin-bottom:14px;box-shadow:0 8px 24px #17365d0b}
+h3{margin:0 0 7px;font-size:18px}.sub{font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 15px}
+label{display:block;font-size:13px;font-weight:700;margin:12px 0 6px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd8e8;border-radius:10px;font:inherit;font-size:14px;background:white;color:var(--navy)}textarea{min-height:80px;resize:vertical;line-height:1.5}
+button,.btn{border:0;border-radius:10px;background:var(--blue);color:white;padding:12px 14px;font:inherit;font-size:14px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.secondary{background:#eaf2ff;color:#1558b0}.white{background:#fff;color:var(--blue);border:1px solid #c8dcfb}.full{width:100%;margin-top:14px}.row{display:flex;gap:9px;flex-wrap:wrap}.row>*{flex:1}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}.tab{flex:1;min-width:100px;background:#eef4fc;color:#35516f}.tab.active{background:var(--blue);color:#fff}
+.output{display:none;margin-top:15px;border:1px solid #dce8f7;background:#f7faff;border-radius:13px;padding:14px}.output pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 system-ui;margin:8px 0 12px}.tag{font-size:11px;font-weight:800;letter-spacing:.04em;color:var(--green)}
+.tip{background:#fff8e8;border:1px solid #f0dfb8;border-radius:11px;padding:12px;color:#73531c;font-size:12px;line-height:1.55;margin-top:12px}
+.steps{display:grid;gap:10px}.step{display:grid;grid-template-columns:30px 1fr;gap:10px}.num{width:28px;height:28px;border-radius:9px;background:#eaf2ff;color:#1558b0;display:grid;place-items:center;font-weight:800}.step p{font-size:13px;line-height:1.55;margin:3px 0;color:var(--muted)}.step b{font-size:14px}
+footer{text-align:center;font-size:12px;line-height:1.6;color:var(--muted);padding:10px}
+@media(min-width:760px){.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{padding:20px}}
+</style></head>
+<body>
+<header><div class="wrap">
+<div class="brand"><div class="logo">S</div><div><h1>Social Booster AI</h1><p>Facebook Organic Growth • Versi 2</p></div></div>
+<div class="hero"><h2>Konten lebih terarah.<br>Pertumbuhan lebih organik.</h2><p>Siapkan postingan dan Reels Facebook, lalu gunakan ChatGPT untuk mengembangkan draft menjadi konten yang lebih kreatif.</p></div>
+</div></header>
+<main class="wrap">
+<div class="card">
+<h3>🎯 Pembuat brief konten</h3><p class="sub">Isi singkat, pilih jenis konten, lalu buat prompt. Salin prompt ke ChatGPT untuk meminta AI menghasilkan naskah yang lebih lengkap.</p>
+<div class="tabs"><button class="tab active" data-kind="post">Postingan</button><button class="tab" data-kind="reels">Naskah Reels</button><button class="tab" data-kind="week">Rencana 7 hari</button></div>
+<label for="topic">Topik utama</label><input id="topic" placeholder="Contoh: kajian Islam, tips usaha, kuliner lokal">
+<div class="cols">
+<div><label for="audience">Target audiens</label><input id="audience" placeholder="Contoh: anak muda, keluarga"></div>
+<div><label for="tone">Gaya bahasa</label><select id="tone"><option>Hangat dan menyentuh</option><option>Edukatif dan praktis</option><option>Lucu ringan dan sopan</option><option>Inspiratif dan reflektif</option><option>Promosi yang meyakinkan</option></select></div>
+</div>
+<div class="cols">
+<div><label for="purpose">Tujuan</label><select id="purpose"><option>Menambah pengikut yang relevan</option><option>Meningkatkan komentar yang bermakna</option><option>Mendorong orang membagikan konten</option><option>Mengenalkan produk atau layanan</option></select></div>
+<div><label for="length">Panjang konten</label><select id="length"><option>Ringkas</option><option selected>Sedang</option><option>Detail</option></select></div>
+</div>
+<label for="notes">Catatan tambahan (opsional)</label><textarea id="notes" placeholder="Misalnya: sertakan dalil yang sahih, contoh nyata, atau hindari bahasa terlalu formal."></textarea>
+<button class="full" id="make">✨ Buat prompt AI</button>
+<div class="output" id="out"><div class="tag">PROMPT SIAP DISALIN</div><pre id="prompt"></pre><div class="row"><button id="copy" class="secondary">Salin prompt</button><a class="btn white" href="https://chatgpt.com/" target="_blank" rel="noopener">Buka ChatGPT ↗</a></div><p class="sub" style="margin:10px 0 0">Setelah ChatGPT terbuka, tempel prompt di kolom chat dan kirim. Hasil AI dibuat di ChatGPT, bukan di halaman web ini.</p></div>
+</div>
+<div class="cols">
+<div class="card"><h3>🔗 Akun Facebook tujuan</h3><p class="sub">Tautan akun yang ingin Anda promosikan secara wajar.</p><a class="btn full" href="https://www.facebook.com/share/1F3Bfukby7/" target="_blank" rel="noopener">Buka akun Facebook ↗</a><button id="copylink" class="white full">Salin tautan akun</button><p class="sub" style="margin:12px 0 0">Jangan pernah memasukkan kata sandi Facebook ke tool ini.</p></div>
+<div class="card"><h3>🧭 Alur kerja dari HP Android</h3><div class="steps">
+<div class="step"><div class="num">1</div><div><b>Isi brief</b><p>Tulis topik, audiens, dan tujuan konten.</p></div></div>
+<div class="step"><div class="num">2</div><div><b>Buat prompt dan salin</b><p>Tekan tombol biru, lalu pilih “Salin prompt”.</p></div></div>
+<div class="step"><div class="num">3</div><div><b>Minta bantuan ChatGPT</b><p>Buka ChatGPT, tempel prompt, lalu kirim.</p></div></div>
+<div class="step"><div class="num">4</div><div><b>Edit dan publikasikan</b><p>Periksa fakta, sesuaikan dengan suara Anda, lalu posting manual ke Facebook.</p></div></div>
+</div></div>
+</div>
+<div class="card"><h3>📌 Checklist pertumbuhan sehat</h3><div class="steps">
+<div class="step"><div class="num">✓</div><div><b>Konten orisinal</b><p>Berikan informasi, cerita, atau sudut pandang yang benar-benar berguna.</p></div></div>
+<div class="step"><div class="num">✓</div><div><b>CTA yang sopan</b><p>Ajak mengikuti akun jika konten relevan; jangan memaksa atau menyesatkan.</p></div></div>
+<div class="step"><div class="num">✓</div><div><b>Hindari manipulasi</b><p>Jangan gunakan bot, follower palsu, spam komentar/grup, atau skema pertukaran follow untuk menggelembungkan angka.</p></div></div>
+</div><div class="tip">Catatan teknis: versi ini tidak memerlukan API key dan aman untuk dicoba sebagai file lokal. Ini adalah pembuat prompt, bukan integrasi AI otomatis. Jika nanti ingin AI langsung muncul di dalam web, kita perlu menambahkan backend/server dan mengamankan API key.</div></div>
+<footer>Social Booster AI • Prototipe untuk penggunaan pribadi • Tidak terhubung otomatis ke Facebook</footer>
+</main>
+<script>
+let kind='post';document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');kind=b.dataset.kind;}));
+function buildPrompt(){
+const topic=document.getElementById('topic').value.trim()||'[isi topik]';
+const audience=document.getElementById('audience').value.trim()||'pengguna Facebook yang tertarik pada topik ini';
+const tone=document.getElementById('tone').value;
+const purpose=document.getElementById('purpose').value;
+const length=document.getElementById('length').value;
+const notes=document.getElementById('notes').value.trim()||'Tidak ada catatan tambahan.';
+let task='';
+if(kind==='post')task=`Buat 3 alternatif postingan Facebook tentang "${topic}". Untuk setiap alternatif, berikan hook pembuka, caption ${length.toLowerCase()}, CTA yang sopan untuk ${purpose.toLowerCase()}, dan 3-5 hashtag yang relevan.`;
+if(kind==='reels')task=`Buat 3 naskah Facebook Reels tentang "${topic}" dengan durasi sekitar 20-30 detik. Untuk tiap naskah sertakan hook 0-3 detik, narasi per segmen waktu, saran visual sederhana yang bisa direkam dengan HP, teks di layar, caption, dan CTA yang sopan untuk ${purpose.toLowerCase()}.`;
+if(kind==='week')task=`Buat kalender konten Facebook 7 hari tentang "${topic}". Setiap hari harus memiliki ide berbeda, format konten, hook, ringkasan caption, CTA, dan tujuan. Variasikan edukasi, cerita, video pendek, dan diskusi.`;
+const prompt=`Anda adalah ahli strategi konten Facebook organik. Bantu saya membuat konten yang bermanfaat dan menarik, bukan clickbait menyesatkan.\n\nTopik: ${topic}\nTarget audiens: ${audience}\nGaya bahasa: ${tone}\nTujuan: ${purpose}\nPanjang: ${length}\nCatatan khusus: ${notes}\n\nTugas:\n${task}\n\nSyarat: gunakan bahasa Indonesia yang alami; hindari klaim yang tidak bisa dibuktikan, spam, engagement bait, dan ajakan follow yang memaksa. Jangan menjamin viral atau jumlah pengikut. Buat hasil mudah diedit dan siap diperiksa sebelum diposting.`;
+document.getElementById('prompt').textContent=prompt;document.getElementById('out').style.display='block';}
+document.getElementById('make').addEventListener('click',buildPrompt);
+document.getElementById('copy').addEventListener('click',async()=>{const text=document.getElementById('prompt').textContent;try{await navigator.clipboard.writeText(text);document.getElementById('copy').textContent='Tersalin ✓';setTimeout(()=>document.getElementById('copy').textContent='Salin prompt',1600)}catch(e){alert('Tekan lama pada teks prompt, pilih semua, lalu Salin.')}});
+document.getElementById('copylink').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('https://www.facebook.com/share/1F3Bfukby7/');document.getElementById('copylink').textContent='Tautan tersalin ✓';setTimeout(()=>document.getElementById('copylink').textContent='Salin tautan akun',1600)}catch(e){alert('https://www.facebook.com/share/1F3Bfukby7/')}});
+</script></body></html>
